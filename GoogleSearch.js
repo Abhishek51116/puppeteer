@@ -20,4 +20,7 @@ const puppeteer = require('puppeteer');
   console.log("Extracted titles:");
   titles.forEach(title => console.log(title));
 
+  // Close the browser
+  await browser.close();
+
 })();
